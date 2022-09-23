@@ -9,9 +9,11 @@
 <body>
 
 <?php
-    include "header_required.php";
-    include "content_required.php";
-    include "footer_required.php";
+    require "header_required.php";
+    require_once "content_required.php";
+    require_once "content_requiredd.php";
+    require "footer_required.php";
+    require "footer_required.php";
 ?>
 </body>
 </html>
