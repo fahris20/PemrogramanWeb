@@ -1,0 +1,8 @@
+.bt-product{
+    text-decoration: none;
+    color: white;
+}
+
+.bt-product:hover{
+    color: black;
+}
