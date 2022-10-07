@@ -13,7 +13,7 @@
                 <!-- search -->
                 <form class="d-flex px-5" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success px-5" type="submit">Search</button>
+                    <button class="btn btn-outline-danger px-5" ><a href="logout.php" style="text-decoration: none; color:red;">Logout</a></button>
                 </form>
                 <!-- Menu -->
                 <ul class="navbar-nav">

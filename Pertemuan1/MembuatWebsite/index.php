@@ -1,27 +1,27 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body >
+<?php
+session_start();
+$database = [
+    'username' => 'fhanzz',
+    'password' => '7'
+];
 
-  <?php
-    include "navigasi.php";  
-    include "header.php";
-    include "content.php";
+if(isset($_POST['submit'])){
+    $username = $_POST['username'];
+    $password = $_POST['password'];
 
-  ?>
+    if($username == $database['username'] && $password == $database['password']) {
+        $_SESSION['username'] = $username;
+        header("location:menu.php");
+    }else {
+        echo '<script>
+            alert("Username atau password salah!")
+            window.location="login.php";
+        </script>';
+    }
+} else {
+    echo '<script>
+    window.location="login.php";
+</script>';
+}
 
-  <!-- footer -->
-    <div class="container rounded-bottom text-bg-dark  text-center py-3 mb-5" id="Footer">
-            <div class="">
-              <p class="">&copy; FIGURE FANTASY || DIBUAT OLEH SI PEMBUAT TERIMA KASIH</p>
-            </div>
-    </div> 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-  </body>
-</html>
+?>

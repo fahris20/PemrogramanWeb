@@ -19,7 +19,7 @@ if(!isset($_SESSION['username'])){
             Hello, Selamat Datang Tuan <?php $_SESSION['username'] ;  ?>!!!
         </p>
     </h1>
-    <p align=center>Kamu Berada di page <b>Admin</b> </p><br>
+    <h2 align=center>Kamu Berada di page <b>Admin</b> </h2><br>
     <h3>
         <p align=center>
             <a href="logout.php">Logout</a>
