@@ -29,6 +29,10 @@ if(isset($_SESSION['username'])){
         <div class="card-body py-5 px-md-5">
 
           <form action="index1.php" method="POST">
+
+          <h1 class="text-center">
+            LOGIN
+          </h1>
             <!-- Email input -->
             <div class="form-outline mb-4">
               <input type="text" id="form2Example1" class="form-control" name="username"/>
