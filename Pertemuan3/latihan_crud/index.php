@@ -14,10 +14,13 @@ $result = mysqli_query($conn_db, $query);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
-    <a href="add.php">ADD NEW CUSTOMER</a><br><br>
-        <table width='80%' border=1>
+    
+    <div class="container py-5">
+    <a href="add.php">ADD NEW CUSTOMER</a>
+    <table width='80%' border=1 class="align-center table table-striped table-bordered">
             <thead>
                 <tr>
                     <th>Name</th>
@@ -58,5 +61,7 @@ $result = mysqli_query($conn_db, $query);
             echo "window.location='index.php'</script>";
         }
         ?>
+    </div>
+        
 </body>
 </html>
