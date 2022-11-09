@@ -12,6 +12,7 @@
               <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <!-- search -->
                 <form class="d-flex px-5" role="search">
+                <button class="btn btn-outline-success px-5 mx-3" ><a href="register.php" style="text-decoration: none; color:lime;">Register</a></button>
                     <button class="btn btn-outline-success px-5 mx-3" ><a href="index1.php" style="text-decoration: none; color:lime;">login</a></button>
                 </form>
                 <!-- Menu -->
