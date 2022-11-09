@@ -5,7 +5,6 @@ if(isset($_POST['submit'])){
     $gender = $_POST['gender'];
     $email = $_POST['email'];
 
-
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
     date_default_timezone_set('Asia/Jakarta');
     $created = date("Y-m-d H:i:s");
@@ -18,7 +17,7 @@ if(isset($_POST['submit'])){
 
     if ($result) {
         header( "refres:5;url=login.php");
-        echo 'Succes Register, You will be redirected to login page in 5 secs.';
+        echo ' Succes Register, You will be redirected to login page in 5 secs.';
     }
 }
 
