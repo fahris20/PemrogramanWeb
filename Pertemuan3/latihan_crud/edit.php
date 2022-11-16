@@ -1,9 +1,7 @@
 <?php
 
 include_once("config.php");
-
 $id = $_GET['id'];
-
 $result = mysqli_query($conn_db, "SELECT * FROM customer WHERE id=$id");
 if (!$result){
     header("Location:index.php");
@@ -15,9 +13,7 @@ while($customer_data = mysqli_fetch_array($result))
     $email = $customer_data['email'];
     $phone = $customer_data['phone'];
 }
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
