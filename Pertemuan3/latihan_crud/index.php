@@ -1,10 +1,7 @@
 <?php
-
 include_once('config.php');
-
 $query = "SELECT * FROM customer ORDER BY id DESC";
 $result = mysqli_query($conn_db, $query);
-
 ?>
 
 <!DOCTYPE html>
